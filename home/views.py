@@ -20,8 +20,8 @@ def index (request):
 def about (request):
     return render (request, 'about.html')
     
-def services (request):
-     return render (request, 'services.html')
+# def services (request):
+#      return render (request, 'services.html')
 
     
 def contact (request):
@@ -34,3 +34,11 @@ def contact (request):
         contact.save()
         messages.success(request, 'Message Sent') 
     return render (request, 'contact.html')
+
+
+def pizza (request):
+    return render (request, 'pizza.html')
+
+
+def breads (request):
+    return render (request, 'breads.html')
